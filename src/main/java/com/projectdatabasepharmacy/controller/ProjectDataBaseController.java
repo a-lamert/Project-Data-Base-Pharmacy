@@ -1,21 +1,18 @@
 package com.projectdatabasepharmacy.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@RestController("/projectDataBaseController")
 @RequestMapping
 public class ProjectDataBaseController {
-    @PostMapping
+    @PostMapping("/add")
     public String addProjectDataBase(@RequestBody ProjectDataBaseController projectDataBaseController){
 
         return null;
     }
-
+@GetMapping
     public List<ProjectDataBaseController> getAllProjectsDataBaseControllers() {
 
         return null;
